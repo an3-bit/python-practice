@@ -15,3 +15,6 @@ dob = "1999-01-15"
 date_of_birth = datetime.strptime(dob, "%Y-%m-%d")
 age = today.year- date_of_birth.year
 print("I am", age, "years old")
+
+age_in_days = datetime.today() - date_of_birth
+print(age_in_days.days //365)
